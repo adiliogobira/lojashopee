@@ -173,7 +173,7 @@ $buff = fgets($handle, $tamanhoPacote);
                 return str_replace('|', ",", $str);
             },explode(',', $buffer));
 
-            var_dump($buffer);die;
+            // var_dump($buffer);die;
         
             ?>
                     <div class="col mb-5">
@@ -181,9 +181,9 @@ $buff = fgets($handle, $tamanhoPacote);
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><?=$buffer['3']?> vendidos</div>
                             <!-- Product image-->
-                            <a target="_blank" href="<?=$buffer['8'];?>"><img class="card-img-top" src="<?=$buffer['9']?>" alt="Imagem do Produto <?=$buffer['1']?>" /></a>
+                            <!-- <a target="_blank" href="<?=$buffer['8'];?>"><img class="card-img-top" src="<?=$buffer['9']?>" alt="Imagem do Produto <?=$buffer['1']?>" /></a> -->
                             <!-- Product details-->
-                            <div class="card-body p-4">
+                            <div class="card-body p-4 mt-3">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><a target="_blank" class="nav-link" href="<?=$buffer['8'];?>"><?=$buffer['1']?></a></h5>
